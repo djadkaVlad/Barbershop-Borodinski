@@ -23,9 +23,63 @@
 		<title>Барбершоп Бородинский</title>
 	</head>
 	<body class="body">
-		<header class="main-header main-header--style">
-
-		</header>
+		 <!-- Preloader -->
+    <div class="preloader">
+      <img class="preloader__logo" src="img/logo/desktop-header-logo.svg" width="200" height="60" alt="Logotype"/>
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <script async type="text/javascript">
+      document.querySelector('.preloader').classList.add('preloader--active');
+    </script>
+    <!-- Шапка сайта : логотит, навигация ( меню ) -->
+    <header class="main-header main-header--style">
+      <div class="main-header__wrapper">
+        <a href="index.html" class="main-header__logo main-header__logo-1">
+          <picture>
+            <source srcset="img/logo/desktop-header-logo.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo/tablet-header-logo.svg" media="(min-width: 768px)">
+            <img class="header-logo-img-1" src="img/logo/cat-e__logo.svg" alt="Logotype" />
+          </picture>
+        </a>
+        <a href="index.html" class="main-header__logo main-header__logo-2">
+        	<img class="header-logo-img-2" src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Cat Energy"/>
+        </a>
+      </div>
+      <!-- Навигация -->
+      <nav class="nav nav--opened">
+        <button class="nav__toggle-button nav__toggle-button--js" type="button" aria-label="Открыть меню" accesskey="b">
+        	<span class="hidden">Открыть меню</span>
+        </button>
+        <ul class="nav__list nav__list--style nav__list-index">
+          <li class="nav__list-item nav__list-item--index nav__list-item--current">
+          	<a class="nav__list-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__list-item">
+          	<a class="nav__list-link" href="gallery.html">Наши работы</a>
+          </li>
+          <li class="nav__list-item">
+          	<a class="nav__list-link" href="form.html">Записаться</a>
+        	</li>
+        	<li class="nav__list-item">
+          	<a class="nav__list-link" href="form.html">Контакты</a>
+          </li>
+          <li class="nav__list-item">
+          	<a class="nav__list-link" href="https://up.htmlacademy.ru/adaptive/23">html academy</a>
+          </li>
+          <li class="nav__list-item">
+          	<a class="nav__list-link" href="form.html">
+          		<svg class="login-icon">
+          			<use></use>
+          		</svg>
+          		<span class="login">Войти</span>
+          	</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 		<main class="main">
 
 		</main>
