@@ -1,1 +1,2 @@
 # Barbershop-Borodinski
+Начало проекта
